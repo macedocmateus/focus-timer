@@ -1,3 +1,3 @@
 "use strict";
-let a = 8;
+let a = 67;
 console.log(a);
