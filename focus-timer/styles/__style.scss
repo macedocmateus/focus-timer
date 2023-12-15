@@ -34,6 +34,23 @@ $controls-bg-color: hsl($hue, 0%, 14%);
             #controls {
                 margin-top: 1.6rem;
                 padding: 2.2rem 4rem;
+                gap: 1.6rem;
+                background-color: $controls-bg-color;
+                border-radius: 999rem;
+            }
+
+            button {
+                background-color: transparent;
+                border: 0;
+                color: $primary-color;
+
+                cursor: pointer;
+
+                font-size: 6.4rem;
+            }
+
+            .secondary {
+                color: $text-color;
             }
         }
 

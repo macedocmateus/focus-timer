@@ -26,6 +26,19 @@
 * body #app #controls {
   margin-top: 1.6rem;
   padding: 2.2rem 4rem;
+  gap: 1.6rem;
+  background-color: hsl(194, 0%, 14%);
+  border-radius: 999rem;
+}
+* body #app button {
+  background-color: transparent;
+  border: 0;
+  color: hsl(194, 100%, 63%);
+  cursor: pointer;
+  font-size: 6.4rem;
+}
+* body #app .secondary {
+  color: hsl(194, 40%, 98%);
 }
 * body .flex {
   display: flex;
