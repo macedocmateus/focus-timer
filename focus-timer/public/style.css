@@ -1,47 +1,58 @@
 :root {
-  font-size: clamp(40%, 1% + 2vw, 62.5%);
-}
+    --hue: 194;
+    --bg-color: hsl(var(--hue), 5%, 7%);
+    --text-color: hsl(var(--hue), 40%, 98%);
+    --primary-color: hsl(var(--hue), 100%, 63%);
+    --controls-bg-color: hsl(var(--hue), 0%, 14%);
 
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-* body {
-  background-color: hsl(194, 5%, 7%);
-  color: hsl(194, 40%, 98%);
-  display: grid;
-  height: 100vh;
-  place-content: center;
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: grid;
+    height: 100vh;
+    place-content: center;
 }
-* body #app {
-  display: grid;
-  justify-items: center;
+#app {
+    display: grid;
+    justify-items: center;
 }
-* body #app #timer {
-  font-size: 9.6rem;
-  font-weight: bold;
+.flex {
+    display: flex;
 }
-* body #app #controls {
-  margin-top: 1.6rem;
-  padding: 2.2rem 4rem;
-  gap: 1.6rem;
-  background-color: hsl(194, 0%, 14%);
-  border-radius: 999rem;
+#timer {
+    font-size: 9.6rem;
+    font-weight: bold;
+    font-family: 'roboto';
 }
-* body #app button {
-  background-color: transparent;
-  border: 0;
-  color: hsl(194, 100%, 63%);
-  cursor: pointer;
-  font-size: 6.4rem;
+#controls {
+    margin-top: 1.6rem;
+    padding: 2.2rem 4rem;
+    gap: 1.6rem;
+    background-color: var(--controls-bg-color);
+    border-radius: 999rem;
 }
-* body #app .secondary {
-  color: hsl(194, 40%, 98%);
+.secondary {
+    color: var(--text-color);
 }
-* body .flex {
-  display: flex;
+.running .ph-play-circle,
+.running .ph-timer,
+.music-on .ph-speaker-none,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle,
+html:not(.music-on) .ph-speaker-high {
+    display: none;
 }
-
-/*# sourceMappingURL=style.css.map */
+button {
+    background-color: transparent;
+    border: 0;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 6.4rem;
+}
