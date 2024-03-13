@@ -13,7 +13,7 @@ Projeto pessoal utilizando conceitos de ES6 módulos e DOM.
 <br>
 
 <p align="center">
-  <img alt="Interface de um sistema de pomodoro" src="./assets/capa-readme.jpg" width="100%">
+  <img alt="Interface de um sistema de pomodoro" src="./public/assets/capa-readme.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
